@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Github-Search": {
+    "github-search": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Github-Search",
+            "outputPath": "dist/github-search",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Github-Search:build"
+            "browserTarget": "github-search:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Github-Search:build:production"
+              "browserTarget": "github-search:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Github-Search:build"
+            "browserTarget": "github-search:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Github-Search:serve"
+            "devServerTarget": "github-search:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Github-Search:serve:production"
+              "devServerTarget": "github-search:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Github-Search"
+    }
+  },
+  "defaultProject": "github-search",
+  "cli": {
+    "analytics": "0c224b2a-eb98-4716-9e43-17e2cbc1f8f8"
+  }
 }

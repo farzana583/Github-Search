@@ -3,9 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api_key:'2a952e845038f65c7ac4b50d24a551b091266d69',
 };
 
+// 2a952e845038f65c7ac4b50d24a551b091266d69 - access token
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
