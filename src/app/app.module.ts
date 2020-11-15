@@ -21,7 +21,7 @@ import { NotFoundComponent } from './Error/not-found/not-found.component';
     HoverDirective,
     NotFoundComponent
   ],
-  imports: [
+  // imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
